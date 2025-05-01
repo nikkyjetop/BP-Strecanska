@@ -19,4 +19,4 @@ for y in range(height):
         image[y, x] = 255 - int(intensity) 
 
 img = Image.fromarray(image)
-img.save("voronoi_5.png")
+img.save("voronoi.png")
