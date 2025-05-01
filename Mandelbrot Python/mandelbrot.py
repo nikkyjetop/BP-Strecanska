@@ -1,8 +1,8 @@
 import numpy as np
 from PIL import Image
 
-width, height = 500, 500
-max_iter = 1000
+width, height = 800, 600
+max_iter = 250
 
 re_start, re_end = -2.0, 1.0
 im_start, im_end = -1.0, 1.0
@@ -18,7 +18,7 @@ for y in range(height):
         while abs(z) <= 2 and n < max_iter:
             z = z * z + c
             n += 1
-        color = int(255 * n / max_iter)
+        color = 255 - int(255 * n / max_iter)
         image[y, x] = color
 
 img = Image.fromarray(image)
