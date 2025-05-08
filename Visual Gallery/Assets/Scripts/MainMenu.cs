@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
 
     public void LobbyButtonClick()
     {
+        SceneManager.LoadScene(2);
 
     }
 

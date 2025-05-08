@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Cutscenes : MonoBehaviour
@@ -17,22 +18,37 @@ public class Cutscenes : MonoBehaviour
 
     public void OnStart()
     {
-
+        image.sprite = imageWithPrompts[_index].Image;
+        promptText.text = imageWithPrompts[_index].Prompt;
     }
     
     public void RightButtonClick()
     {
-
+        _index++;
+        if(_index >= imageWithPrompts.Count)
+        {
+            _index = 0;
+        }
+        image.sprite = imageWithPrompts[_index].Image;
+        promptText.text = imageWithPrompts[_index].Prompt;
     }
 
     public void LeftButtonClick()
     {
-
+        _index--;
+        if (_index < 0)
+        {
+            _index = imageWithPrompts.Count - 1;
+        }
+        image.sprite = imageWithPrompts[_index].Image;
+        promptText.text = imageWithPrompts[_index].Prompt;
     }
 
-    private string[] prompts = { 
-        "ahoj"
-    };
+    public void BackButtonClick()
+    {
+        SceneManager.LoadScene(0);
+    }
+
 }
 
 [Serializable]
