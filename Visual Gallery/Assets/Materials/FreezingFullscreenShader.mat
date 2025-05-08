@@ -37,6 +37,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Brightness: 0
     - _Fullscreen_AlphaBlendOperation: 0
     - _Fullscreen_BlendMode: 1
     - _Fullscreen_ColorBlendOperation: 0
@@ -45,9 +46,9 @@ Material:
     - _Fullscreen_DstColorBlend: 10
     - _Fullscreen_SrcAlphaBlend: 1
     - _Fullscreen_SrcColorBlend: 5
-    - _InnerRadius: 38.2
-    - _NoiseStrength: 5000
-    - _OuterRadius: 9.1
+    - _InnerRadius: 5
+    - _NoiseStrength: 2761
+    - _OuterRadius: 4.2
     - _VignetteIntensity: 0
     - _VignettePower: 0
     m_Colors:

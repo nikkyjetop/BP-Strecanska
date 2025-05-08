@@ -49,8 +49,8 @@ Material:
     - _Fullscreen_DstColorBlend: 10
     - _Fullscreen_SrcAlphaBlend: 1
     - _Fullscreen_SrcColorBlend: 5
-    - _InnerRadius: 0.48
-    - _OuterRadius: 1.31
+    - _InnerRadius: 0.7
+    - _OuterRadius: 0.72
     - _Speed: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 0.9960784}
