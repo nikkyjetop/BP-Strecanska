@@ -51,6 +51,8 @@ public class FullscreenEffects : MonoBehaviour
     public void OnDropdownItemClick()
     {
         _feature.passMaterial = ShaderMaterials[ShaderDropdown.value];
+        CRTGlobalVolume.SetActive(false);
+
     }
 
     public void BackButtonClick()
