@@ -11,21 +11,15 @@ public class MainMenu : MonoBehaviour
     public void LobbyButtonClick()
     {
         SceneManager.LoadScene(2);
-
     }
 
-    public void CRTButtonClick()
+    public void FullscreenEffectsButtonClick()
     {
-
-    }
-
-    public void ShaderButtonClick()
-    {
-
+        SceneManager.LoadScene(3);
     }
 
     public void LevelButtonClick()
     {
-
+        SceneManager.LoadScene(4);
     }
 }

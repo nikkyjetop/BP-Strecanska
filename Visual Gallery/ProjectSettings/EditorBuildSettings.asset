@@ -14,6 +14,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lobby.unity
     guid: 0440d41ce22c9d746a156cc96cd6daeb
+  - enabled: 1
+    path: Assets/Scenes/Fullscreen Efffects.unity
+    guid: 91ac119e94a276c4d8c31373fd7edf11
+  - enabled: 1
+    path: Assets/Scenes/Level Objects.unity
+    guid: 143348f40e859f443a7acb3289c64196
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

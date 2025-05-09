@@ -7,8 +7,8 @@ using UnityEngine.UI;
 
 public class Cutscenes : MonoBehaviour
 {
-    public TextMeshProUGUI promptText;
-    public Image image;
+    public TextMeshProUGUI PromptText;
+    public Image Image;
     [SerializeField]
     public List<ImageWithPrompt> imageWithPrompts = new List<ImageWithPrompt>();
 
@@ -18,8 +18,8 @@ public class Cutscenes : MonoBehaviour
 
     public void OnStart()
     {
-        image.sprite = imageWithPrompts[_index].Image;
-        promptText.text = imageWithPrompts[_index].Prompt;
+        Image.sprite = imageWithPrompts[_index].Image;
+        PromptText.text = imageWithPrompts[_index].Prompt;
     }
     
     public void RightButtonClick()
@@ -29,8 +29,8 @@ public class Cutscenes : MonoBehaviour
         {
             _index = 0;
         }
-        image.sprite = imageWithPrompts[_index].Image;
-        promptText.text = imageWithPrompts[_index].Prompt;
+        Image.sprite = imageWithPrompts[_index].Image;
+        PromptText.text = imageWithPrompts[_index].Prompt;
     }
 
     public void LeftButtonClick()
@@ -40,8 +40,8 @@ public class Cutscenes : MonoBehaviour
         {
             _index = imageWithPrompts.Count - 1;
         }
-        image.sprite = imageWithPrompts[_index].Image;
-        promptText.text = imageWithPrompts[_index].Prompt;
+        Image.sprite = imageWithPrompts[_index].Image;
+        PromptText.text = imageWithPrompts[_index].Prompt;
     }
 
     public void BackButtonClick()

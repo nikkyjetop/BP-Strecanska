@@ -7,8 +7,8 @@ using UnityEngine.UI;
 
 public class Lobby : MonoBehaviour
 {
-    public TextMeshProUGUI titleText;
-    public Image image;
+    public TextMeshProUGUI ImageTitleText;
+    public Image Image;
     [SerializeField]
     public List<ImageWithTitle> imageWithTitleList = new List<ImageWithTitle>();
 
@@ -18,8 +18,8 @@ public class Lobby : MonoBehaviour
 
     public void OnStart()
     {
-        image.sprite = imageWithTitleList[_index].Image;
-        titleText.text = imageWithTitleList[_index].Title;
+        Image.sprite = imageWithTitleList[_index].Image;
+        ImageTitleText.text = imageWithTitleList[_index].Title;
     }
 
     public void RightButtonClick()
@@ -29,8 +29,8 @@ public class Lobby : MonoBehaviour
         {
             _index = 0;
         }
-        image.sprite = imageWithTitleList[_index].Image;
-        titleText.text = imageWithTitleList[_index].Title;
+        Image.sprite = imageWithTitleList[_index].Image;
+        ImageTitleText.text = imageWithTitleList[_index].Title;
     }
 
     public void LeftButtonClick()
@@ -40,8 +40,8 @@ public class Lobby : MonoBehaviour
         {
             _index = imageWithTitleList.Count - 1;
         }
-        image.sprite = imageWithTitleList[_index].Image;
-        titleText.text = imageWithTitleList[_index].Title;
+        Image.sprite = imageWithTitleList[_index].Image;
+        ImageTitleText.text = imageWithTitleList[_index].Title;
     }
 
 
